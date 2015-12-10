@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>403 Forbidden</title>
+</head>
+<body>
+
+<p>Directory access is forbidden.</p>
+
+</body>
+</html>
+
+<?php
+public function index()
+{
+// Массив, в котором будут храниться товары
+$products = array();
+
+// Получение товаров из БД
+$products = $this->cart_model->retrieve_products();
+}
